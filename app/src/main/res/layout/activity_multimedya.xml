@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".Multimedya">
+
+    <!-- Home İkonu -->
+    <ImageView
+        android:id="@+id/multimedya_imgHome"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:contentDescription="@string/icon_home"
+        android:focusable="true"
+        android:src="@mipmap/icon_home"/>
+
+    <!-- En Üstteki Layout -->
+    <RelativeLayout
+        android:id="@+id/multimedya_layoutUst"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/multimedya_imgHome"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/main_rounded_top">
+
+        <!--Ses Kısma Resmi -->
+        <ImageView
+            android:id="@+id/multimedya_imgSesKisma"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:src="@mipmap/dvd_volume_down"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@string/ses_k_sma_konu"
+            android:focusable="true"/>
+
+        <!--Dvd Resmi -->
+        <ImageView
+            android:id="@+id/multimedya_imgDvd"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/dvd"
+            android:contentDescription="@string/dvd_ikonu" />
+
+        <!--Ses Açma Resmi -->
+        <ImageView
+            android:id="@+id/multimedya_imgSesAcma"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="290dp"
+            android:src="@mipmap/dvd_volume_up"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@string/ses_yukseltme_ikonu"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <!--Ön Kamera Layout -->
+    <RelativeLayout
+        android:id="@+id/multimedya_layoutOnKamera"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:background="@drawable/main_rounded_top"
+        android:layout_below="@+id/multimedya_layoutUst"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp">
+
+        <!--Ön Kamera Image -->
+        <ImageView
+            android:id="@+id/multimedya_imgOnKamera"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/front_camera"
+            android:layout_centerInParent="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/on_kamera_ikonu"/>
+
+        <!--Ön Kamera Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/on_kamera"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <!--EkranBölücü Layout -->
+    <RelativeLayout
+        android:id="@+id/multimedya_layoutEkranBolucu"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:background="@drawable/main_rounded_top"
+        android:layout_below="@+id/multimedya_layoutUst"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="145dp">
+
+        <!--Ekran Bölücü Image -->
+        <ImageView
+            android:id="@+id/multimedya_imgEkranBolucu"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/screen_divider"
+            android:layout_centerInParent="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/ekran_bolucu"/>
+
+        <!--Ekran Bölücü Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ekran_b_l_c"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <!--Arka Kamera Layout -->
+    <RelativeLayout
+        android:id="@+id/multimedya_layoutArkaKamera"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:background="@drawable/main_rounded_top"
+        android:layout_below="@+id/multimedya_layoutUst"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="286dp">
+
+        <!--Arka Kamera Image -->
+        <ImageView
+            android:id="@+id/multimedya_imgArkaKamera"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/rear_camera"
+            android:layout_centerInParent="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/arka_kamera"/>
+
+        <!--Arka Kamera Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arka_kamera"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <!--TV Kumandası Layout -->
+    <RelativeLayout
+        android:id="@+id/multimedya_layoutTvKumandasi"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:background="@drawable/main_rounded_top"
+        android:layout_below="@+id/multimedya_layoutOnKamera"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp">
+
+        <!--TV Kumandası Image -->
+        <ImageView
+            android:id="@+id/multimedya_imgTvKumandasi"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/remote"
+            android:layout_centerInParent="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/kumanda"/>
+
+        <!--TV Kumandası Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kumanda"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <!--Tavan Monitoru Layout -->
+    <RelativeLayout
+        android:id="@+id/multimedya_layoutTavanMonitoru"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:background="@drawable/main_rounded_top"
+        android:layout_below="@+id/multimedya_layoutEkranBolucu"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="145dp">
+
+        <!--Tavan Monitoru Image -->
+        <ImageView
+            android:id="@+id/multimedya_imgTavanMonitoru"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/roof_monitor"
+            android:layout_centerInParent="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/roof"/>
+
+        <!--Tavan Monitoru Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tavan_monit_r"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <!--Apple Tv Kumandasi Layout -->
+    <RelativeLayout
+        android:id="@+id/multimedya_layoutAppleTvKumandasi"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:background="@drawable/main_rounded_top"
+        android:layout_below="@+id/multimedya_layoutArkaKamera"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="286dp">
+
+        <!--Apple Tv Kumandasi Image -->
+        <ImageView
+            android:id="@+id/multimedya_imgAppleTvKumandası"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/new_apple_tv_remote"
+            android:layout_centerInParent="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/newapple"/>
+
+        <!--Apple Tv Kumandasi Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Apple Tv \nKumandasi"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <!-- Bilgisayar Layout-->
+    <RelativeLayout
+        android:id="@+id/multimedya_layoutBilgisayar"
+        android:layout_width="195dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/multimedya_layoutTvKumandasi"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/main_rounded_top">
+
+        <ImageView
+            android:id="@+id/multimedya_imgBilgisayar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/macbook"
+            android:layout_centerInParent="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/bilgisayar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bilgisayar"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+
+    </RelativeLayout>
+
+    <!-- PlayStation Layout-->
+    <RelativeLayout
+        android:id="@+id/multimedya_layoutPlayStation"
+        android:layout_width="195dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/multimedya_layoutTvKumandasi"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/main_rounded_top">
+
+        <!-- PlayStation Image-->
+        <ImageView
+            android:id="@+id/multimedya_imgPlayStation"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/play_station"
+            android:layout_centerInParent="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/playstation"/>
+
+        <!-- PlayStation Text-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/playstation"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

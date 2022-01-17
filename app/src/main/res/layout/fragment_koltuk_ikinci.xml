@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+
+    <!--    Koltuk Layoutu-->
+    <RelativeLayout
+        android:id="@+id/fragKoltuk_layoutKoltuk2"
+        android:layout_width="291dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="120dp"
+        android:background="@mipmap/icon_koltuk" />
+
+    <!--    Koltuk Birinci Ayar-->
+    <ImageView
+        android:id="@+id/fragKOltuk_imgKoltukBirAyar2"
+        android:layout_width="32dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginStart="65dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/koltukbirinciayar" />
+
+    <!--    Koltuk Ikinci Ayar-->
+    <ImageView
+        android:id="@+id/fragKOltuk_imgKoltukIkiAyar2"
+        android:layout_width="28dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginStart="85dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/koltukIkinciAyar" />
+
+    <!--    Koltuk Ucuncu Ayar-->
+    <ImageView
+        android:id="@+id/fragKOltuk_imgKoltukUcAyar2"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginStart="100dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/koltukUcuncuAyar" />
+
+    <!--    Koltuk M Ayar-->
+    <ImageView
+        android:id="@+id/fragKOltuk_imgKoltukMAyar2"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginStart="124dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/koltukMAyar" />
+
+    <!--    Koltuk Ileri Butonu-->
+    <ImageView
+        android:id="@+id/fragKoltuk_imgKoltukIleri2"
+        android:layout_width="35dp"
+        android:scaleType="fitXY"
+        android:layout_height="30dp"
+        android:src="@mipmap/icon_right_arrow"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="265dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/koltukIleriButon" />
+
+    <!--    Koltuk Geri Butonu-->
+    <ImageView
+        android:id="@+id/fragKoltuk_imgKoltukGeri2"
+        android:layout_width="35dp"
+        android:scaleType="fitXY"
+        android:layout_height="30dp"
+        android:src="@mipmap/icon_left_arrow"
+        android:layout_marginTop="255dp"
+        android:layout_marginStart="215dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/koltukGeriButon" />
+
+    <!--    Koltuk Bel Ileri Butonu-->
+    <ImageView
+        android:id="@+id/fragKOltuk_imgKoltukBelIleri2"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_right_arrow"
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="160dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/koltukBelIleriButon" />
+
+    <!--    Koltuk Bel Geri Butonu-->
+    <ImageView
+        android:id="@+id/fragKOltuk_imgKoltukBelGeri2"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_left_arrow"
+        android:layout_marginTop="195dp"
+        android:layout_marginStart="145dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/koltukBelGeriButon" />
+
+    <!--    Koltuk Bas Yukari Butonu-->
+    <ImageView
+        android:id="@+id/fragKOltuk_imgKoltukBasYukari2"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_up_arrow"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="115dp"
+        android:rotation="-30"
+        android:contentDescription="@string/koltukbasyukaributonu"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!--    Koltuk Bas Asagi Butonu-->
+    <ImageView
+        android:id="@+id/fragKOltuk_imgKoltukBasAsagi2"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_down_arrow"
+        android:layout_marginTop="168dp"
+        android:layout_marginStart="130dp"
+        android:rotation="-30"
+        android:contentDescription="@string/koltukbasasagibutonu"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+
+
+
+    <!--    Koltuk ısıtma-->
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/main_rounded_top">
+
+        <!--        İki tane olmasının nedeni birinin arkaplanı kırmızı, diğerinin arkaplanı dokunma efekli-->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_koltuk_isitici"
+            android:contentDescription="@string/isiticikirmizi"
+            android:background="@drawable/rounded_red"/>
+        <ImageView
+            android:id="@+id/fragKoltuk_imgIsiticiAc2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_koltuk_isitici"
+            android:contentDescription="@string/isiticiripple"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <!--    Koltuk soğutma-->
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/main_rounded_top">
+
+        <!--        İki tane olmasının nedeni birinin arkaplanı kırmızı, diğerinin arkaplanı dokunma efekli-->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_koltuk_isitici"
+            android:contentDescription="@string/isiticimavi"
+            android:background="@drawable/rounded_mavi"/>
+        <ImageView
+            android:id="@+id/fragKoltuk_imgIsiticiKapat2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_koltuk_isitici"
+            android:contentDescription="@string/isiticiripple"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <!--    En sağdaki koltuk yüksekliği -->
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="120dp"
+        android:background="@drawable/main_rounded_top"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="350dp">
+
+        <ImageView
+            android:id="@+id/fragKoltuk_imgKoltukYukari2"
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:src="@mipmap/icon_up_arrow"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/koltukyukari"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+        <ImageView
+            android:id="@+id/fragKoltuk_imgKoltukAsagi2"
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="60dp"
+            android:src="@mipmap/icon_down_arrow"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/koltukasagi"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <!--    Masaj paneli-->
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/main_rounded_top"
+        android:layout_below="@+id/fragKoltuk_layoutKoltuk2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/fragKoltuk_imgMasajMod2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon_buton_dark_grey"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/fragKoltuk_Mod"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/fragKOltuk_tvMasajMod2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/fragKoltuk_Mod"
+            android:textStyle="bold|italic"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="34dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/fragKOltuk_tvMasaj2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/fragKoltuk_masaj"
+            android:textStyle="italic"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/fragKoltuk_imgMasajAc2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon_buton_dark_grey"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="165dp"
+            android:contentDescription="@string/fragKoltuk_ac"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/fragKOltuk_tvMasajAc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/fragKoltuk_ac"
+            android:textStyle="bold|italic"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="198dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+
+
+
+    </RelativeLayout>
+
+    <!--    Masa paneli-->
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/main_rounded_top"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="80dp">
+
+        <ImageView
+            android:id="@+id/fragKoltuk_imgMasaKapat2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_buton_dark_grey"
+            android:contentDescription="@string/fragKoltuk_kapat"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/fragKoltuk_tvMasaKapat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragKoltuk_kapat"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/fragKoltuk_tvMasa2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragKoltuk_masa2"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/fragKoltuk_imgMasaAc2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="138dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_buton_dark_grey"
+            android:contentDescription="@string/fragKoltuk_masaAc"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/fragKoltuk_tvMasaAc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragKoltuk_masaAc"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="155dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

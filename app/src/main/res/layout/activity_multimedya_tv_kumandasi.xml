@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".MultimedyaTvKumandasi">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgBack"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:contentDescription="@string/geri_tu_u"
+        android:focusable="true"
+        android:src="@mipmap/back"/>
+
+    <!-- Home Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgHome"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/tvkumandasi_imgBack"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:contentDescription="@string/home"
+        android:focusable="true"
+        android:src="@mipmap/icon_home"/>
+
+    <!-- Source Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgSource"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/tvkumandasi_imgBack"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Source Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOURCE"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="138dp"
+        android:layout_marginStart="25dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+
+    <!-- CH+ Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgChannelUp"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvkumandasi_imgSource"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- CH+ Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvChannelUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CH+"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/tvkumandasi_imgSource"
+        android:layout_marginStart="34dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- CH- Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgChannelDown"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvkumandasi_imgChannelUp"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- CH- Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvChannelDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CH-"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/tvkumandasi_imgChannelUp"
+        android:layout_marginStart="37dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- CH List Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgChannelList"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvkumandasi_imgChannelDown"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- List Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvChannelList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CH LIST"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/tvkumandasi_imgChannelDown"
+        android:layout_marginStart="25dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Pre Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgChannelPre"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvkumandasi_imgChannelList"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Pre Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvChannelPre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRE-CH"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/tvkumandasi_imgChannelList"
+        android:layout_marginStart="25dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Return Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgReturn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvkumandasi_imgChannelPre"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Return Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RETURN"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/tvkumandasi_imgChannelPre"
+        android:layout_marginStart="23dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Exit Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgExit"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvkumandasi_imgReturn"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Exit Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXIT"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/tvkumandasi_imgReturn"
+        android:layout_marginStart="36dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Guide Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgGuide"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvkumandasi_imgExit"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Guide Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GUIDE"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/tvkumandasi_imgExit"
+        android:layout_marginStart="30dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Extra Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgExtra"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvkumandasi_imgGuide"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Extra Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvExtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXTRA"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/tvkumandasi_imgGuide"
+        android:layout_marginStart="30dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Mute Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgMute"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/tvkumandasi_imgBack"
+        android:layout_marginHorizontal="240dp"
+        android:layout_toEndOf="@+id/tvkumandasi_imgSource"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Mute Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvMute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MUTE"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="138dp"
+        android:layout_toEndOf="@id/tvkumandasi_imgSource"
+        android:layout_marginStart="265dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Vol+ Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgVolumeUp"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvkumandasi_imgMute"
+        android:layout_marginHorizontal="240dp"
+        android:layout_toEndOf="@+id/tvkumandasi_imgSource"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Vol+ Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvVolumeUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOL +"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/tvkumandasi_imgSource"
+        android:layout_below="@id/tvkumandasi_imgSource"
+        android:layout_marginStart="270dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Vol- Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgVolumeDown"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvkumandasi_imgVolumeUp"
+        android:layout_marginHorizontal="240dp"
+        android:layout_toEndOf="@+id/tvkumandasi_imgSource"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Vol- Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvVolumeDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOL -"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/tvkumandasi_imgSource"
+        android:layout_below="@id/tvkumandasi_imgVolumeUp"
+        android:layout_marginStart="270dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Home Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteHome"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvkumandasi_imgVolumeDown"
+        android:layout_marginHorizontal="240dp"
+        android:layout_toEndOf="@+id/tvkumandasi_imgSource"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Home Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvRemoteHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/tvkumandasi_imgSource"
+        android:layout_below="@id/tvkumandasi_imgVolumeDown"
+        android:layout_marginStart="265dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Info Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteInfo"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvkumandasi_imgRemoteHome"
+        android:layout_marginHorizontal="240dp"
+        android:layout_toEndOf="@+id/tvkumandasi_imgSource"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- INFO Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvRemoteInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INFO"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/tvkumandasi_imgSource"
+        android:layout_below="@id/tvkumandasi_imgRemoteHome"
+        android:layout_marginStart="270dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Settings Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgSettings"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvkumandasi_imgRemoteInfo"
+        android:layout_marginHorizontal="240dp"
+        android:layout_toEndOf="@+id/tvkumandasi_imgSource"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Settings Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SETTINGS"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/tvkumandasi_imgSource"
+        android:layout_below="@id/tvkumandasi_imgRemoteInfo"
+        android:layout_marginStart="253dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- TTX / MIX Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgTtxMix"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvkumandasi_imgSettings"
+        android:layout_marginHorizontal="240dp"
+        android:layout_toEndOf="@+id/tvkumandasi_imgSource"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- TTX / MIX Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvTtxMix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TTX / MIX"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/tvkumandasi_imgSource"
+        android:layout_below="@id/tvkumandasi_imgSettings"
+        android:layout_marginStart="253dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- AD / SUBT Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgAdSubt"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvkumandasi_imgTtxMix"
+        android:layout_marginHorizontal="240dp"
+        android:layout_toEndOf="@+id/tvkumandasi_imgSource"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- AD / SUBT Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvAdSubt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AD / SUBT"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/tvkumandasi_imgSource"
+        android:layout_below="@id/tvkumandasi_imgTtxMix"
+        android:layout_marginStart="253dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Sports Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgSports"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_dark_grey"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvkumandasi_imgAdSubt"
+        android:layout_marginHorizontal="240dp"
+        android:layout_toEndOf="@+id/tvkumandasi_imgSource"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/fragKoltuk_Mod"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Sports Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvSports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPORTS"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/tvkumandasi_imgSource"
+        android:layout_below="@id/tvkumandasi_imgAdSubt"
+        android:layout_marginStart="260dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Power Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgPower"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/power"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgHome"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Up Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteUp"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/remote_up"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgPower"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Ok Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteOk"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_grey"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteUp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Ok Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvRemoteOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvkumandasi_imgRemoteUp"
+        android:layout_marginStart="255dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Right Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteRight"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/remote_right"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteUp"
+        android:layout_toEndOf="@+id/tvkumandasi_imgRemoteOk"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Left Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteLeft"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/remote_left"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteUp"
+        android:layout_toStartOf="@+id/tvkumandasi_imgRemoteOk"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Down Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteDown"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/remote_down"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteOk"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Two Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_grey"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteDown"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Two Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvRemoteTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvkumandasi_imgRemoteDown"
+        android:layout_marginStart="255dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote One Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteOne"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_grey"
+        android:scaleType="fitXY"
+        android:layout_toStartOf="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginHorizontal="5dp"
+        android:layout_below="@+id/tvkumandasi_imgRemoteDown"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote One Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvRemoteOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:layout_toStartOf="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginHorizontal="30dp"
+        android:layout_below="@id/tvkumandasi_imgRemoteDown"
+        android:layout_marginStart="255dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Three Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteThree"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_grey"
+        android:scaleType="fitXY"
+        android:layout_toEndOf="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginHorizontal="5dp"
+        android:layout_below="@+id/tvkumandasi_imgRemoteDown"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Three Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvRemoteThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginHorizontal="30dp"
+        android:layout_below="@id/tvkumandasi_imgRemoteDown"
+        android:layout_marginStart="255dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Five Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteFive"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_grey"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Five Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvRemoteFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginStart="255dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Four Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteFour"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_grey"
+        android:scaleType="fitXY"
+        android:layout_toStartOf="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginHorizontal="5dp"
+        android:layout_below="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Four Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvRemoteFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:layout_toStartOf="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginHorizontal="30dp"
+        android:layout_below="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginStart="255dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Six Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteSix"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_grey"
+        android:scaleType="fitXY"
+        android:layout_toEndOf="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginHorizontal="5dp"
+        android:layout_below="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Six Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvRemoteSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginHorizontal="30dp"
+        android:layout_below="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginStart="255dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+        <!-- Remote Eight Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteEight"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_grey"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteFive"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Eight Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvRemoteEight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteFive"
+        android:layout_marginStart="255dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Seven Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteSeven"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_grey"
+        android:scaleType="fitXY"
+        android:layout_toStartOf="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginHorizontal="5dp"
+        android:layout_below="@+id/tvkumandasi_imgRemoteFive"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Seven Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvRemoteSeven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:layout_toStartOf="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginHorizontal="30dp"
+        android:layout_below="@+id/tvkumandasi_imgRemoteFive"
+        android:layout_marginStart="255dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Nine Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteNine"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_grey"
+        android:scaleType="fitXY"
+        android:layout_toEndOf="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginHorizontal="5dp"
+        android:layout_below="@+id/tvkumandasi_imgRemoteFive"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Nine Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvRemoteNine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/tvkumandasi_imgRemoteTwo"
+        android:layout_marginHorizontal="30dp"
+        android:layout_below="@+id/tvkumandasi_imgRemoteFive"
+        android:layout_marginStart="255dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Zero Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteZero"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_buton_grey"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteEight"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Zero Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvRemoteZero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteEight"
+        android:layout_marginStart="255dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote A Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteA"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/buton_red"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteZero"
+        android:layout_toEndOf="@+id/tvkumandasi_imgExtra"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote A Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvRemoteA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteZero"
+        android:layout_toEndOf="@+id/tvkumandasi_imgExtra"
+       android:layout_marginStart="28dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote B Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteB"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/buton_green"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteZero"
+        android:layout_toEndOf="@+id/tvkumandasi_imgRemoteA"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote B Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvRemoteB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteZero"
+        android:layout_toEndOf="@+id/tvkumandasi_imgRemoteA"
+        android:layout_marginStart="28dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote C Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteC"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/buton_yellow"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteZero"
+        android:layout_toEndOf="@+id/tvkumandasi_imgRemoteB"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote C Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvRemoteC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteZero"
+        android:layout_toEndOf="@+id/tvkumandasi_imgRemoteB"
+        android:layout_marginStart="28dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote D Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteD"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/buton_blue"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteZero"
+        android:layout_toEndOf="@+id/tvkumandasi_imgRemoteC"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/power"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote D Text -->
+    <TextView
+        android:id="@+id/tvkumandasi_tvRemoteD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvkumandasi_imgRemoteZero"
+        android:layout_toEndOf="@+id/tvkumandasi_imgRemoteC"
+        android:layout_marginStart="28dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Play Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgPlay"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/remote_play"
+        android:layout_marginStart="124dp"
+        android:layout_below="@id/tvkumandasi_imgExtra"
+        android:contentDescription="@string/play"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Stop Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgStop"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/remote_stop"
+        android:layout_below="@id/tvkumandasi_imgExtra"
+        android:layout_marginStart="208dp"
+        android:contentDescription="@string/play"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Fast Forward Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgFastForward"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/remote_fast_forward"
+        android:layout_below="@id/tvkumandasi_imgExtra"
+        android:layout_marginStart="290dp"
+        android:contentDescription="@string/play"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Fast Backward Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgFastBackward"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/remote_fast_backward"
+        android:layout_below="@id/tvkumandasi_imgExtra"
+        android:layout_marginStart="40dp"
+        android:contentDescription="@string/play"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Pause Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgPause"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/remote_pause"
+        android:layout_below="@id/tvkumandasi_imgFastBackward"
+        android:layout_marginStart="208dp"
+        android:contentDescription="@string/play"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Remote Fast Backward Button -->
+    <ImageView
+        android:id="@+id/tvkumandasi_imgRemoteRed"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/icon_buton_grey"
+        android:layout_below="@id/tvkumandasi_imgFastBackward"
+        android:layout_marginStart="124dp"
+        android:contentDescription="@string/play"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

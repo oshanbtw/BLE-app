@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".Isiklar">
+
+    <!-- Home İkonu -->
+    <ImageView
+        android:id="@+id/isiklar_imgHome"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:contentDescription="@string/icon_home"
+        android:focusable="true"
+        android:src="@mipmap/icon_home"/>
+
+    <!-- Tavan Aydınlatma Layout'u -->
+    <RelativeLayout
+        android:id="@+id/isiklar_layoutTavan"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/isiklar_imgHome"
+        android:background="@drawable/main_rounded_top">
+
+        <!-- Tavan Aydınlatma Yazısı -->
+        <TextView
+            android:id="@+id/isiklar_tavanAydinlatmaKontrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tavan Aydınlatma \n          Kontrol"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:textSize="16sp"
+            android:layout_marginStart="149dp"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Yan Aydınlatma Kapat Layout'u -->
+        <RelativeLayout
+            android:id="@+id/isiklar_layoutTavanKapat"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_top_gr"
+            android:layout_marginStart="300dp">
+
+            <!-- Yan Aydınlatma Kapat Yazısı -->
+            <TextView
+                android:id="@+id/isiklar_tvTavanKapat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kapat"
+                android:textColor="@color/white"
+                android:textStyle="italic|bold"
+                android:layout_centerInParent="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </RelativeLayout>
+
+        <!-- Kırmızı Renk -->
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/rounded_red"
+            android:contentDescription="@string/tavankirmizi"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="5dp"/>
+        <!-- Kırmızı Renk Tıklama Efekti-->
+        <ImageView
+            android:id="@+id/isiklar_imgTavanKirmizi"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/tavankirmizi"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Yeşil Renk -->
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/rounded_green"
+            android:contentDescription="@string/tavanyesil"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="29dp"/>
+        <!-- Yeşil Renk Tıklama Efekti -->
+        <ImageView
+            android:id="@+id/isiklar_imgTavanYesil"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/tavanyesil"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="29dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Mavi Renk -->
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/rounded_mavi"
+            android:contentDescription="@string/tavanmavi"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="53dp"/>
+        <!-- Mavi Renk Tıklama Efekti-->
+        <ImageView
+            android:id="@+id/isiklar_imgTavanMavi"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/tavanmavi"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="53dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Açık Gri Renk -->
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/rounded_grayv2"
+            android:contentDescription="@string/tavangriv2"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="78dp"/>
+        <!-- Açık Gri Renk Tıklama Efekti -->
+        <ImageView
+            android:id="@+id/isiklar_imgTavanGriv2"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/tavangriv2"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="78dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Gri Renk -->
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/rounded_gray"
+            android:contentDescription="@string/tavangri"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="102dp"/>
+        <!-- Gri Renk Tıklama Efekti-->
+        <ImageView
+            android:id="@+id/isiklar_imgTavanGri"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/tavangri"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="102dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Kırmızı Yazısı -->
+        <TextView
+            android:id="@+id/isiklar_tvTavanKirmizi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/k_rm_z"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:textSize="16sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="5dp"/>
+        <!-- Kırmızının Barı  -->
+        <SeekBar
+            android:id="@+id/isiklar_sbTavanKirmizi"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/isiklar_tvTavanKirmizi"
+            android:layout_marginTop="51dp"/>
+
+        <!--  Yeşil Yazısı -->
+        <TextView
+            android:id="@+id/isiklar_tvTavanYesil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ye_il"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:textSize="16sp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="5dp"/>
+        <!--  Yeşilin Barı -->
+        <SeekBar
+            android:id="@+id/isiklar_sbTavanYesil"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/isiklar_tvTavanKirmizi"
+            android:layout_marginTop="81dp"/>
+
+        <!--  Mavi Yazısı -->
+        <TextView
+            android:id="@+id/isiklar_tvTavanMavi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tavanMavi"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="110dp"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"/>
+        <!--  Mavinin Barı -->
+        <SeekBar
+            android:id="@+id/isiklar_sbTavanMavi"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/isiklar_tvTavanKirmizi"
+            android:layout_marginTop="111dp"/>
+
+    </RelativeLayout>
+
+    <!--  Yan Aydınlatma Layout'u -->
+    <RelativeLayout
+        android:id="@+id/isiklar_layoutYan"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/isiklar_layoutTavan"
+        android:background="@drawable/main_rounded_top">
+
+        <!--  Yan Aydınlatma Yazısı -->
+        <TextView
+            android:id="@+id/isiklar_YanAydinlatmaKontrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yan Aydınlatma  \n        Kontrol"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:textSize="16sp"
+            android:layout_marginStart="149dp"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Yan Aydınlatma Kapat Layout'u -->
+        <RelativeLayout
+            android:id="@+id/isiklar_layoutYanKapat"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_top_gr"
+            android:layout_marginStart="300dp">
+
+            <!-- Yan Aydınlatma Kapat Yazısı -->
+            <TextView
+                android:id="@+id/isiklar_tvYanKapat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kapat"
+                android:textColor="@color/white"
+                android:textStyle="italic|bold"
+                android:layout_centerInParent="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </RelativeLayout>
+
+        <!-- Kırmızı Renk  -->
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/rounded_red"
+            android:contentDescription="@string/yankirmizi"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="5dp"/>
+        <!-- Kırmızı Renk Tıklama Efekti  -->
+        <ImageView
+            android:id="@+id/isiklar_imgYanKirmizi"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/yankirmizi"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Yeşil Renk  -->
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/rounded_green"
+            android:contentDescription="@string/yanyesil"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="29dp"/>
+        <!-- Yeşil Renk Tıklama EFekti  -->
+        <ImageView
+            android:id="@+id/isiklar_imgYanYesil"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/yanyesil"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="29dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!--  Mavi Renk -->
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/rounded_mavi"
+            android:contentDescription="@string/yanmavi"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="53dp"/>
+        <!-- Mavi Renk Tıklama Efekti  -->
+        <ImageView
+            android:id="@+id/isiklar_imgYanMavi"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/yanmavi"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="53dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!--  Açık Gri Renk -->
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/rounded_grayv2"
+            android:contentDescription="@string/yangriv2"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="78dp"/>
+        <!-- Açık Gri Renk Tıklama Efekti  -->
+        <ImageView
+            android:id="@+id/isiklar_imgYanGriv2"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/yangriv2"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="78dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Gri Renk  -->
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/rounded_gray"
+            android:contentDescription="@string/yangri"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="102dp"/>
+        <!-- Gri Renk Tıklama Efekti  -->
+        <ImageView
+            android:id="@+id/isiklar_imgYanGri"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/yangri"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="102dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Kırmızı Yazısı  -->
+        <TextView
+            android:id="@+id/isiklar_tvYanKirmizi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/k_rm_z"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="50dp"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"/>
+        <!-- Kırmızının Barı  -->
+        <SeekBar
+            android:id="@+id/isiklar_sbYanKirmizi"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/isiklar_tvYanKirmizi"
+            android:layout_marginTop="51dp"/>
+
+        <!-- Yeşil Yazısı  -->
+        <TextView
+            android:id="@+id/isiklar_tvYanYesil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ye_il"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="80dp"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"/>
+        <!--  Yeşilin Barı -->
+        <SeekBar
+            android:id="@+id/isiklar_sbYanYesil"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/isiklar_tvYanKirmizi"
+            android:layout_marginTop="81dp"/>
+
+        <!-- Mavi Yazısı  -->
+        <TextView
+            android:id="@+id/isiklar_tvYanMavi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tavanMavi"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="110dp"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"/>
+        <!--  Mavinin Barı -->
+        <SeekBar
+            android:id="@+id/isiklar_sbYanMavi"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/isiklar_tvYanKirmizi"
+            android:layout_marginTop="111dp"/>
+
+    </RelativeLayout>
+
+    <!--  İç Aydınlatma Layout'u -->
+    <RelativeLayout
+        android:id="@+id/isiklar_layoutIc"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/isiklar_layoutYan"
+        android:background="@drawable/main_rounded_top">
+
+        <!--  İç Aydınlatma Yazısı -->
+        <TextView
+            android:id="@+id/isiklar_IcAydinlatmaKontrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İç Aydınlatma  \n       Kontrol"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:textSize="16sp"
+            android:layout_marginStart="149dp"
+            android:layout_marginTop="12dp"/>
+
+        <!--  İç Aydınlatma Kapat Layout'u -->
+        <RelativeLayout
+            android:id="@+id/isiklar_layoutIcKapat"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_top_gr"
+            android:layout_marginStart="300dp">
+
+            <!-- İç Aydınlatma Kapat Yazısı  -->
+            <TextView
+                android:id="@+id/isiklar_tvIcKapat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kapat"
+                android:textColor="@color/white"
+                android:textStyle="italic|bold"
+                android:layout_centerInParent="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </RelativeLayout>
+
+        <!-- Kırmızı Renk  -->
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/rounded_red"
+            android:contentDescription="@string/ickirmizi"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="5dp"/>
+        <!-- Kırmızı Renk Tıklama Efekti  -->
+        <ImageView
+            android:id="@+id/isiklar_imgIcKirmizi"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/ickirmizi"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Yeşil Renk  -->
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/rounded_green"
+            android:contentDescription="@string/icyesil"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="29dp"/>
+        <!-- Yeşil Renk Tıklama Efekti  -->
+        <ImageView
+            android:id="@+id/isiklar_imgIcYesil"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/icyesil"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="29dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!--  Mavi Renk -->
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/rounded_mavi"
+            android:contentDescription="@string/icmavi"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="53dp"/>
+        <!-- Mavi Renk Tıklama Efekti  -->
+        <ImageView
+            android:id="@+id/isiklar_imgIcMavi"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/icmavi"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="53dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Açık Gri Renk  -->
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/rounded_grayv2"
+            android:contentDescription="@string/icgriv2"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="78dp"/>
+        <!-- Açık Gri Tıklama Efekti  -->
+        <ImageView
+            android:id="@+id/isiklar_imgIcGriv2"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/icgriv2"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="78dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Gri renk  -->
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/rounded_gray"
+            android:contentDescription="@string/icgri"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="102dp"/>
+        <!-- Gri Renk Tıklama Efekti  -->
+        <ImageView
+            android:id="@+id/isiklar_imgIcGri"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/icgri"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="102dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Kırmızı Yazısı  -->
+        <TextView
+            android:id="@+id/isiklar_tvIcKirmizi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/k_rm_z"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="50dp"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"/>
+        <!-- Kırmızının Barı  -->
+        <SeekBar
+            android:id="@+id/isiklar_sbIcKirmizi"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/isiklar_tvIcKirmizi"
+            android:layout_marginTop="51dp"/>
+
+        <!-- Yeşil Yazısı  -->
+        <TextView
+            android:id="@+id/isiklar_tvIcYesil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ye_il"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="80dp"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"/>
+        <!-- Yeşilin Barı  -->
+        <SeekBar
+            android:id="@+id/isiklar_sbIcYesil"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/isiklar_tvIcKirmizi"
+            android:layout_marginTop="81dp"/>
+
+        <!-- Mavi Yazısı  -->
+        <TextView
+            android:id="@+id/isiklar_tvIcMavi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tavanMavi"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="110dp"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"/>
+        <!-- Mavinin Barı  -->
+        <SeekBar
+            android:id="@+id/isiklar_sbIcMavi"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/isiklar_tvIcKirmizi"
+            android:layout_marginTop="111dp"/>
+
+    </RelativeLayout>
+
+    <!--  Hafıza Layout'u -->
+    <RelativeLayout
+        android:id="@+id/isiklar_layoutOkuma"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/isiklar_layoutIc"
+        android:background="@drawable/main_rounded_top">
+
+        <!-- Sol Okuma Lambası Layout'u  -->
+        <RelativeLayout
+            android:id="@+id/isiklar_layoutSolOkumaLambasi"
+            android:layout_width="135dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/rounded_top_gr"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true">
+
+            <!-- Sol Okuma Lambası Yazısı  -->
+            <TextView
+                android:id="@+id/isiklar_tvSolOkumaLambasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textStyle="italic|bold"
+                android:text="@string/sol_okuma_lambas"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </RelativeLayout>
+
+        <!--  Hafızalar Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/haf_zalar"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_centerHorizontal="true"
+            android:textSize="13sp"/>
+
+        <!-- 1 Yazısı  -->
+        <TextView
+            android:id="@+id/isiklar_tvHafiza1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_marginTop="50dp"
+            android:textSize="13sp"
+            android:layout_marginStart="160dp"/>
+
+        <!-- 2 Yazısı -->
+        <TextView
+            android:id="@+id/isiklar_tvHafiza2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_2"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_marginTop="50dp"
+            android:textSize="13sp"
+            android:layout_toEndOf="@+id/isiklar_tvHafiza1"
+            android:layout_marginStart="30dp"/>
+
+        <!-- 3 Yazısı  -->
+        <TextView
+            android:id="@+id/isiklar_tvHafiza3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_3"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_marginTop="50dp"
+            android:textSize="13sp"
+            android:layout_toEndOf="@+id/isiklar_tvHafiza2"
+            android:layout_marginStart="28dp"/>
+
+        <!-- 1. Kayıt Resmi  -->
+        <ImageView
+            android:id="@+id/isiklar_imgWheelMemory1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_wheel_memory"
+            android:contentDescription="@string/hafiza"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/isiklar_layoutSolOkumaLambasi"
+            android:layout_marginStart="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!--  2.Kayıt Resmi -->
+        <ImageView
+            android:id="@+id/isiklar_imgWheelMemory2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_wheel_memory"
+            android:contentDescription="@string/hafiza"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/isiklar_imgWheelMemory1"
+            android:layout_marginStart="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- 3.Kayıt Resmi  -->
+        <ImageView
+            android:id="@+id/isiklar_imgWheelMemory3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_wheel_memory"
+            android:contentDescription="@string/hafiza"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/isiklar_imgWheelMemory2"
+            android:layout_marginStart="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!--  Sağ Okuma Lambası Layout'u -->
+        <RelativeLayout
+            android:id="@+id/isiklar_layoutSagOkumaLambasi"
+            android:layout_width="135dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="260dp"
+            android:background="@drawable/rounded_top_gr"
+            android:layout_centerVertical="true">
+
+            <!--  Sağ Okuma Lambası Yazısı -->
+            <TextView
+                android:id="@+id/isiklar_tvSagOkumaLambasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textStyle="italic|bold"
+                android:text="@string/sa_okuma_lambas"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

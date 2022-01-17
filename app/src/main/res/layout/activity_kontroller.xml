@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".Kontroller">
+
+    <!-- Home İkonu -->
+    <ImageView
+        android:id="@+id/kontroller_imgHome"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:contentDescription="@string/icon_home"
+        android:focusable="true"
+        android:src="@mipmap/icon_home"/>
+
+    <!-- Klima Kontrol Layout -->
+    <RelativeLayout
+        android:id="@+id/kontroller_layoutKlimaKontrol"
+        android:layout_width="130dp"
+        android:layout_height="160dp"
+        android:background="@drawable/main_rounded_top"
+        android:layout_below="@+id/kontroller_imgHome"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp">
+
+        <!-- Klima Kontrol Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Klima Kontrol"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <!-- Klima Kontrol Image -->
+        <ImageView
+            android:id="@+id/kontroller_imgKlimaKontrol"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/clima_fan" />
+
+        <!-- Kapalı Yazısı -->
+        <TextView
+            android:id="@+id/kontroller_tvKlimaAcikKapali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kapalı"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/kontroller_imgKlimaKontrol"
+            android:layout_marginTop="10dp" />
+
+        <!-- + Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:textSize="30sp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/kontroller_imgKlimaKontrol"
+            android:layout_centerVertical="true"/>
+
+        <!-- + Butonu -->
+        <RelativeLayout
+            android:id="@+id/kontroller_layoutKlimaKontrolArti"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/kontroller_imgKlimaKontrol"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- - Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:textSize="30sp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/kontroller_imgKlimaKontrol"
+            android:layout_centerVertical="true"/>
+
+        <!-- - Butonu -->
+        <RelativeLayout
+            android:id="@+id/kontroller_layoutKlimaKontrolEksi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/kontroller_imgKlimaKontrol"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+
+    </RelativeLayout>
+
+    <!-- Duman Fanı Layout -->
+    <RelativeLayout
+        android:id="@+id/kontroller_layoutDumanFani"
+        android:layout_width="130dp"
+        android:layout_height="160dp"
+        android:background="@drawable/main_rounded_top"
+        android:layout_below="@+id/kontroller_imgHome"
+        android:layout_toEndOf="@id/kontroller_layoutKlimaKontrol"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp">
+        <!-- Klima Kontrol Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duman Fanı"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <!-- Klima Kontrol Image -->
+        <ImageView
+            android:id="@+id/kontroller_imgDumanFani"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/fan" />
+
+        <!-- Aç / Kapat Yazısı -->
+        <TextView
+            android:id="@+id/kontroller_tvDumanFaniAcKapat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aç / Kapat"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/kontroller_imgDumanFani"
+            android:layout_marginTop="10dp" />
+
+        <!-- + Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:textSize="30sp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/kontroller_imgDumanFani"
+            android:layout_centerVertical="true"/>
+
+        <!-- + Butonu -->
+        <RelativeLayout
+            android:id="@+id/kontroller_layoutDumanFaniArti"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/kontroller_imgDumanFani"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- - Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:textSize="30sp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/kontroller_imgDumanFani"
+            android:layout_centerVertical="true"/>
+
+        <!-- - Butonu -->
+        <RelativeLayout
+            android:id="@+id/kontroller_layoutDumanFaniEksi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/kontroller_imgDumanFani"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+
+    </RelativeLayout>
+
+    <!-- Klima Fani Layout -->
+    <RelativeLayout
+        android:id="@+id/kontroller_layoutKlimaFani"
+        android:layout_width="130dp"
+        android:layout_height="160dp"
+        android:background="@drawable/main_rounded_top"
+        android:layout_below="@+id/kontroller_imgHome"
+        android:layout_toEndOf="@+id/kontroller_layoutDumanFani"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp">
+
+        <!-- Klima Kontrol Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Klima Fanı"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <!-- Klima Kontrol Image -->
+        <ImageView
+            android:id="@+id/kontroller_imgKlimaFani"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/clima_fan" />
+
+        <!-- Kapalı Yazısı -->
+        <TextView
+            android:id="@+id/kontroller_tvKlimaFaniAcikKapali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kapalı"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/kontroller_imgKlimaFani"
+            android:layout_marginTop="10dp" />
+
+        <!-- + Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:textSize="30sp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/kontroller_imgKlimaFani"
+            android:layout_centerVertical="true"/>
+
+        <!-- + Butonu -->
+        <RelativeLayout
+            android:id="@+id/kontroller_layoutKlimaFaniArti"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/kontroller_imgKlimaFani"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- - Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:textSize="30sp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/kontroller_imgKlimaFani"
+            android:layout_centerVertical="true"/>
+
+        <!-- - Butonu -->
+        <RelativeLayout
+            android:id="@+id/kontroller_layoutKlimaFaniEksi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/kontroller_imgKlimaFani"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <!-- Sol Arka Cam Layout -->
+    <RelativeLayout
+        android:id="@+id/kontroller_layoutSolArkaCam"
+        android:layout_width="195dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/kontroller_layoutKlimaFani"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/main_rounded_top">
+
+        <!-- Sol Arka Cam Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sol Arka Cam"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <!-- Sol Arka Cam Image -->
+        <ImageView
+            android:id="@+id/kontroller_imgSolArkaCam"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/window_left" />
+
+        <!-- Sol Arka Cam Kapat Image -->
+        <ImageView
+            android:id="@+id/kontroller_imgSolArkaCamKapat"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@mipmap/icon_buton_dark_grey"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Kapat Yazısı -->
+        <TextView
+            android:id="@+id/kontroller_tvSolArKaCamKapat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kapat"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="127dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Sol Arka Cam Aç Image -->
+        <ImageView
+            android:id="@+id/kontroller_imgSolArkaCamAc"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@mipmap/icon_buton_dark_grey"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="115dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Aç Yazısı -->
+        <TextView
+            android:id="@+id/kontroller_tvSolArKaCamAc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aç"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="127dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <!-- Sağ Arka Cam Layout -->
+    <RelativeLayout
+        android:id="@+id/kontroller_layoutSagArkaCam"
+        android:layout_width="195dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/kontroller_layoutKlimaFani"
+        android:layout_toEndOf="@+id/kontroller_layoutSolArkaCam"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/main_rounded_top">
+
+        <!-- Sağ Arka Cam Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sağ Arka Cam"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <!-- Sol Arka Cam Image -->
+        <ImageView
+            android:id="@+id/kontroller_imgSagArkaCam"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/window_right" />
+
+        <!-- Sol Arka Cam Kapat Image -->
+        <ImageView
+            android:id="@+id/kontroller_imgSagArkaCamKapat"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@mipmap/icon_buton_dark_grey"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Kapat Yazısı -->
+        <TextView
+            android:id="@+id/kontroller_tvSagArKaCamKapat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kapat"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="127dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Sol Arka Cam Aç Image -->
+        <ImageView
+            android:id="@+id/kontroller_imgSagArkaCamAc"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@mipmap/icon_buton_dark_grey"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="115dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Aç Yazısı -->
+        <TextView
+            android:id="@+id/kontroller_tvSagArKaCamAc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aç"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="127dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <!-- Espresso Layout -->
+    <RelativeLayout
+        android:id="@+id/kontroller_layoutEspresso"
+        android:layout_width="195dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/kontroller_layoutSagArkaCam"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/main_rounded_top">
+
+        <!-- Espresso Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espresso"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <!-- Sol Arka Cam Image -->
+        <ImageView
+            android:id="@+id/kontroller_imgEspresso"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/espresso_machine" />
+
+        <!-- Kapat Image -->
+        <ImageView
+            android:id="@+id/kontroller_imgEspressoKapat"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@mipmap/icon_buton_dark_grey"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Kapat Yazısı -->
+        <TextView
+            android:id="@+id/kontroller_tvEspressoKapat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kapat"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="127dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Aç Image -->
+        <ImageView
+            android:id="@+id/kontroller_imgEspressoAc"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@mipmap/icon_buton_dark_grey"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="115dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Aç Yazısı -->
+        <TextView
+            android:id="@+id/kontroller_tvEspressoAc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aç"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="127dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <!-- Buzdolabi Layout -->
+    <RelativeLayout
+        android:id="@+id/kontroller_layoutBuzdolabi"
+        android:layout_width="195dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/kontroller_layoutSagArkaCam"
+        android:layout_toEndOf="@+id/kontroller_layoutEspresso"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/main_rounded_top">
+
+        <!-- Buzdolabi Yazısı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buzdolabı"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <!-- Buzdolabi Image -->
+        <ImageView
+            android:id="@+id/kontroller_imgBuzdolabi"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/fridge" />
+
+        <!-- Kapat Image -->
+        <ImageView
+            android:id="@+id/kontroller_imgBuzdolabiKapat"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@mipmap/icon_buton_dark_grey"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Kapat Yazısı -->
+        <TextView
+            android:id="@+id/kontroller_tvBuzdolabiKapat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kapat"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="127dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Aç Image -->
+        <ImageView
+            android:id="@+id/kontroller_imgBuzdolabiAc"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@mipmap/icon_buton_dark_grey"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="115dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Aç Yazısı -->
+        <TextView
+            android:id="@+id/kontroller_tvBuzdolabiAc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aç"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="127dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
