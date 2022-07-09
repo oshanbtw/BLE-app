@@ -2,7 +2,7 @@
 # Bluetooth Low Energy Example Application
 ## Ble-App Nedir?
 > Staj esnasında yaptığım bu uygulamada amaç, Bluetooth Low Energy kütüphanesini kullanarak, MAC adresini bildiğim bir ardunio kartına bağlantı sağlayarak haberleşmek. Bu haberleşme sayesinde araç içerisindeki araçları (ışıklar, klima, vb) cihazımızdan kontrol edebileceğiz.
-## Ble-App Nedir?
+## Ble-App İçerik
 >* Açılış ekranında eğer cihaza bağlı değilsek bizi “Tekrar Bağlanma” ekranı karşılıyor. Eğer cihaza bağlıysak “Sistem Aç/Kapat” ekranı karşılıyor. 
 
 [<img src='https://i.hizliresim.com/pl7pu9u.png' alt='github' width= "200">]()
