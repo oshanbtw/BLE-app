@@ -5,7 +5,7 @@
 ## Ble-App İçerik
 >* Açılış ekranında eğer cihaza bağlı değilsek bizi “Tekrar Bağlanma” ekranı karşılıyor. Eğer cihaza bağlıysak “Sistem Aç/Kapat” ekranı karşılıyor. 
 
-[<img src='https://i.hizliresim.com/pl7pu9u.png' alt='github' width= "200">]()
+[<img src='https://i.hizliresim.com/pl7pu9u.png' width= "200">]()
 [<img src='https://i.hizliresim.com/5x5ub07.png' alt='github' width= "200">]()
 [<img src='https://i.hizliresim.com/hd46icp.png' alt='github' width= "200">]()
 
